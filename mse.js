@@ -94,6 +94,10 @@ ajax('http://localhost:3001/assets/video1/video1.dash').then(data => {
     video.onseeked = function () {
         console.log('seeked');
     }
+
+    video.onplaying = function (e) {
+        console.log(e);
+    }
 });
 
 
